@@ -27,7 +27,7 @@ export default function Navbar() {
       {username && (
         <>
           <Link to={"/"}>
-            <button onClick={handleLogout}>Logout</button>
+            <button onClick={()=>handleLogout}>Logout</button>
           </Link>
         </>
       )}
