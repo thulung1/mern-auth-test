@@ -10,7 +10,7 @@ export default function Navbar() {
   const navigate = useNavigate()
 
   const handleLogout = async () => {
-    await axios.get(`${BASE_URL}/api/v1/user/logout`, {withCredentials: true});
+    await axios.post(`${BASE_URL}/api/v1/user/logout`, {withCredentials: true});
     setUsername(null)
     navigate("/")
   };
