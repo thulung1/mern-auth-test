@@ -12,7 +12,7 @@ export default function Navbar() {
   const handleLogout = async () => {
     await axios.post(`${BASE_URL}/api/v1/user/logout`, {withCredentials: true});
     setUsername(null)
-    navigate("/")
+    // navigate("/")
   };
 
   return (
